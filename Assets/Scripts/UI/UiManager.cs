@@ -27,7 +27,7 @@ namespace RPG.UI
         public UnityEvent OnClosePage;
         [SerializeField] private PageType _type = PageType.None;
 
-        public bool CheckTyping(PageType desired) => _type == desired;
+        public bool IsOfType(PageType desired) => _type == desired;
 
         public void Close() => gameObject.SetActive(false);
 

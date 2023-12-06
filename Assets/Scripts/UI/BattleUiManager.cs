@@ -7,14 +7,14 @@ namespace RPG.UI.Battle
     class BattleUiManager : UiManager
     {
         [Header("References")]
-        [SerializeField] private LifeBar _allyLifeBar;
-        [SerializeField] private LifeBar _enemyLifeBar;
+        
 
         [Header("Values")]
         [SerializeField] private float _damageAnimationScaler;
 
-        public void DoVisualDamageToAlly(float amount) => DoDamageAnimation(_allyLifeBar, amount);
-        public void DoVisualDamageToEnemy(float amount) => DoDamageAnimation(_enemyLifeBar, amount);
+        public void DoVisualDamage(LifeBar bar, float amount){
+            StartCoroutine(DoDamageAnimation(bar,amount));
+        }
 
         private IEnumerator DoDamageAnimation(LifeBar bar, float amount)
         {
@@ -26,10 +26,6 @@ namespace RPG.UI.Battle
                 bar.FilledAmount = i;
                 yield return null;
             }
-        }
-
-        public void AssignHealth(IHealth health){
-            
         }
     }
 

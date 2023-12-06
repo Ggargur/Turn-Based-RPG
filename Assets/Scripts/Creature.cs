@@ -12,7 +12,26 @@ namespace RPG.Battle
         [SerializeField] private int _defence;
         [SerializeField] private int _speed;
 
-        [SerializeField] private List<Move> _moveset = new List<Move>();
+        [SerializeField] private List<Move> _learnableMoves = new();
 
+    }
+
+    class CreatureAttribute
+    {
+        enum Type
+        {
+            Health, Attack, Defence, Speed
+        }
+
+        private int _value;
+        private int _effordValue;
+        private int _individualValue;
+
+        public CreatureAttribute(int individualValue, int effordValue, int value)
+        {
+            _individualValue = individualValue;
+            _effordValue = effordValue;
+            _value = value;
+        }
     }
 }

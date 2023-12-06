@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf16a8f7b694bbea8b8d2d1e7b36a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ally: {fileID: 274056445}
-  _adversary: {fileID: 1736991659}
+  _ally: []
+  _adversary: []
 --- !u!1 &274056441
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _creature: {fileID: 11400000, guid: e7997b2b0bf77d5fc9b0fac2570a5fa2, type: 2}
+  _lifebar: {fileID: 0}
   _health: 100
   _maxHealth: 100
 --- !u!1 &467095009
@@ -313,9 +314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ffa833c754b22b381b0dbaca55c267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allyLifeBar: {fileID: 0}
-  _enemyLifeBar: {fileID: 0}
-  _damageAnimationScaler: 0
+  _openPages: []
+  _damageAnimationScaler: 1.1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,5 +995,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _creature: {fileID: 11400000, guid: e7997b2b0bf77d5fc9b0fac2570a5fa2, type: 2}
+  _lifebar: {fileID: 0}
   _health: 100
   _maxHealth: 100

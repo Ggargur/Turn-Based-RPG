@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RPG.Battle
 {
-    class Attack : Move
+    abstract class Attack : Move
     {
         [SerializeField] private float _power;
 

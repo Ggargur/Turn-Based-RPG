@@ -19,7 +19,7 @@ namespace RPG.Battle
         {
             get => _health; set
             {
-                Lifebar.
+                _health = value;
             }
         }
         public float MaxHealth { get => _maxHealth; set => _maxHealth = value; }
